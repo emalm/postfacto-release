@@ -30,7 +30,7 @@
 #
 source 'https://rubygems.org'
 
-ruby '2.7.6'
+ruby '2.7.3'
 
 gem 'rails', '>= 6.1.3.2'
 
@@ -50,7 +50,6 @@ gem 'rest-client'
 gem 'sassc-rails', '~> 2.0.0'
 gem 'uglifier'
 gem 'jwt'
-gem 'activerecord-nulldb-adapter'
 
 group :development, :test do
   gem 'dotenv-rails', '>= 2.7.5'
