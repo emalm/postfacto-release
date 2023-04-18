@@ -30,7 +30,7 @@
 #
 source 'https://rubygems.org'
 
-ruby '2.7.3'
+ruby '3.2.2'
 
 gem 'rails', '>= 6.1.3.2'
 
@@ -47,8 +47,6 @@ gem 'puma', '>= 5.3.1'
 gem 'rack-cors', '>= 1.1.1', require: 'rack/cors'
 gem 'rack-ssl', '>= 1.4.1'
 gem 'rest-client'
-gem 'sassc-rails', '~> 2.0.0'
-gem 'uglifier'
 gem 'jwt'
 
 group :development, :test do
@@ -75,4 +73,10 @@ group :production do
   gem 'redis', '~> 3.3.3'
   gem 'mysql2'
   gem 'pg'
+end
+
+group :asset do
+  gem 'duktape'
+  gem 'uglifier'
+  gem 'sassc-rails', '~> 2.0.0'
 end
