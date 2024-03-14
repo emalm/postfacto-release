@@ -39,3 +39,8 @@ test:
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
+
+# mysql2-specific parameters that make emoji and other 4-byte UTF8 sequences persist
+production:
+  encoding: utf8mb4
+  collation: utf8mb4_unicode_ci
